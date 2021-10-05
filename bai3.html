@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function negativeCharacterCount(arr){
+        let fload = false;
+        let count = 0;
+        let arr1 = ['a','o','u','e','i']
+        for(let i = 0; i < arr.length; i++)
+        if (arr1.indexOf(arr[i]) !== -1){
+            fload = true;
+            count++;
+        }
+        if (fload){
+            return count;
+        } else {
+            return 'false';
+        }
+    }
+    let str = prompt("nhập vào chuỗi: ");
+    let arr = str.split("");
+    console.log(negativeCharacterCount(arr));
+</script>
+</body>
+</html>
